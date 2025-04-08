@@ -1,29 +1,30 @@
 import React from 'react';
 
-const Cart = ({ cart, removeFromCart }) => {
-  const total = cart.reduce((acc, item) => acc + item.price, 0);
 
+const Cart = ({ cartItems, totalPrice, currency, removeFromCart, goToCheckout }) => {
   return (
-    <div>
+    <div className="cart-container">
       <h2>Your Cart</h2>
-      {cart.length === 0 ? (
-        <p>Your cart is empty</p>
-      ) : (
-        <div>
-          {cart.map((item) => (
-            <div key={item.id} className="cart-item">
-              <img src={item.image} alt={item.name} />
-              <h3>{item.name}</h3>
-              <p>R {item.price}</p>
+      <ul>
+        {cartItems.length > 0 ? (
+          cartItems.map((item, index) => (
+            <li key={index}>
+              <img src={item.image} alt={item.name} className="cart-item-image" />
+              {item.name} - {currency} {item.price}
               <button onClick={() => removeFromCart(item.id)}>Remove</button>
-            </div>
-          ))}
-          <h3>Total: R {total}</h3>
-        </div>
-      )}
+            </li>
+          ))
+        ) : (
+          <p>Your cart is empty</p>
+        )}
+      </ul>
+      <p>Total Price: {currency} {totalPrice}</p>
+      <button onClick={goToCheckout}>Proceed to Checkout</button>
     </div>
   );
 };
 
 export default Cart;
+
+
 

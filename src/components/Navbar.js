@@ -9,13 +9,15 @@ const Navbar = ({ cartCount }) => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/our-story">Our Story</Link></li>
         <li><Link to="/shop">Shop</Link></li>
-        <li>
-          <Link to="/cart" className="cart-icon">
+        
+       <li>  <Link to="/cart" className="cart-icon">
             <span className="material-icons">shopping_cart</span>
             {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
-          </Link>
+          </Link></li>
+          <li>
+          <Link to="/checkout">Account</Link>
         </li>
-      </ul>
+        </ul>
     </nav>
   );
 };

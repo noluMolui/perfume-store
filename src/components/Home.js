@@ -20,7 +20,7 @@ const HomePage = () => {
 
       <section className="whyus">
 <h2>Why You'll Love Our Perdumes</h2>
-<ul>
+<ul className="ReasonUs">
   <li>lond-lasting and unforgatable scents</li>
   <li>inspire by confidence, beauty and elegance</li>
   <li>Hand-crafted with the finest ingredients</li>
@@ -37,11 +37,11 @@ const HomePage = () => {
           </div>
           <div className="perfume-card">
             <img src="/images/strawberry perfume.jpg" alt="Perfume 2" />
-            <Link to="/shop" className="learn-more">Golden Amber</Link>
+            <Link to="/shop" className="learn-more">strawberry-fragrance</Link>
           </div>
           <div className="perfume-card">
             <img src="/images/collection fragrances.jpg" alt="Perfume 3" />
-            <Link to="/shop" className="learn-more">Golden Amber</Link>
+            <Link to="/shop" className="learn-more">fragrance package</Link>
           </div>
         </div>
       </section>

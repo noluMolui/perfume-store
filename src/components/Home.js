@@ -37,11 +37,11 @@ const HomePage = () => {
           </div>
           <div className="perfume-card">
             <img src="/images/strawberry perfume.jpg" alt="Perfume 2" />
-            <Link to="/shop" className="learn-more">strawberry-fragrance</Link>
+            <Link to="/shop" className="learn-more">lush scent</Link>
           </div>
           <div className="perfume-card">
             <img src="/images/collection fragrances.jpg" alt="Perfume 3" />
-            <Link to="/shop" className="learn-more">fragrance package</Link>
+            <Link to="/shop" className="learn-more">lush package</Link>
           </div>
         </div>
       </section>

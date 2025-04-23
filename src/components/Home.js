@@ -27,7 +27,7 @@ const HomePage = () => {
 </ul>
       </section>
       
-      {/* Featured Perfumes Section */}
+     
       <section className="featured">
         <h2>Featured Collection</h2>
         <div className="perfume-gallery">
